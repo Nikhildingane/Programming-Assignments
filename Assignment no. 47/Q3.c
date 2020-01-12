@@ -1,0 +1,30 @@
+#include<stdio.h>
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Name        :   Display
+//  Input       :   none
+//  Output      :   none
+//  Description :   draw pattern using reccuresive function
+//  Author      :   Nikhil
+//  Date        :   05/11/2019
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void Display()
+{
+    static int i=5;
+    if(i>=1)
+    {
+        printf("%d\t",i);
+        i--;
+        Display();
+    }
+}
+
+//Entry point function : main()
+int main()
+{
+    Display();
+    return 0;                       // return to operating system
+}
+
+
+
